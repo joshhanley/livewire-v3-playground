@@ -1,6 +1,10 @@
 <?php
 
+use App\Http\Livewire\Main;
+use App\Http\Livewire\Sample;
+use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Route;
+use Livewire\Livewire;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +17,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('login', fn() => Blade::render(<<<'HTML'
+<html>
+    <body>
+        You must login.
+    </body>
+</html>
+HTML));
+Route::get('sample', Sample::class);
+Route::get('/', Main::class);
+
+// Route::prefix('test')
+//     ->group(function() {
+//         Livewire::setUpdateRoute(function($handle) {
+//             return Route::post('/customother/livewire/new', $handle)->middleware('auth');
+//         });
+
+//     });
