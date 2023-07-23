@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2f34a2b8d933fcf0c6406463b0c8ac03",
+    "content-hash": "d6751f55c5b5026a6b99870d1594111e",
     "packages": [
         {
             "name": "brick/math",
@@ -1616,18 +1616,24 @@
         },
         {
             "name": "livewire/livewire",
-            "version": "dev-main",
+            "version": "v3.0.0-beta.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/livewire/livewire.git",
+                "reference": "04298292a365841879d64c13881d5499517bb597"
+            },
             "dist": {
-                "type": "path",
-                "url": "/Users/josh/Development/packages/livewire-next",
-                "reference": "1e546e25e7a06aa472632885dd6b9fbac6eada85"
+                "type": "zip",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/04298292a365841879d64c13881d5499517bb597",
+                "reference": "04298292a365841879d64c13881d5499517bb597",
+                "shasum": ""
             },
             "require": {
-                "illuminate/database": "^9.0|^10.0",
-                "illuminate/support": "^9.0|^10.0",
-                "illuminate/validation": "^9.0|^10.0",
+                "illuminate/database": "^9.0|^10.0|^11.0",
+                "illuminate/support": "^9.0|^10.0|^11.0",
+                "illuminate/validation": "^9.0|^10.0|^11.0",
                 "league/mime-type-detection": "^1.9",
-                "php": "^8.0",
+                "php": "^8.1",
                 "symfony/http-kernel": "^5.0|^6.0"
             },
             "require-dev": {
@@ -1643,7 +1649,7 @@
             "extra": {
                 "laravel": {
                     "providers": [
-                        "Livewire\\ServiceProvider"
+                        "Livewire\\LivewireServiceProvider"
                     ],
                     "aliases": {
                         "Livewire": "Livewire\\Livewire"
@@ -1658,13 +1664,7 @@
                     "Livewire\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "App\\": "vendor/orchestra/testbench-core/laravel/app",
-                    "Tests\\": "tests/",
-                    "LegacyTests\\": "legacy_tests/"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1675,9 +1675,17 @@
                 }
             ],
             "description": "A front-end framework for Laravel.",
-            "transport-options": {
-                "relative": false
-            }
+            "support": {
+                "issues": "https://github.com/livewire/livewire/issues",
+                "source": "https://github.com/livewire/livewire/tree/v3.0.0-beta.3"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/livewire",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-07-21T23:02:51+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -8593,7 +8601,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "livewire/livewire": 20
+        "livewire/livewire": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,
