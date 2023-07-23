@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Livewire;
 
 use App\Models\User;
 use Livewire\Component;
@@ -22,7 +22,7 @@ class Sample extends Component
 
     public function other()
     {
-        
+
     }
 
 

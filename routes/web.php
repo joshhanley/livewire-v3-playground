@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Livewire\Main;
-use App\Http\Livewire\Sample;
+use App\Livewire\Main;
+use App\Livewire\Sample;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Route;
 use Livewire\Livewire;
