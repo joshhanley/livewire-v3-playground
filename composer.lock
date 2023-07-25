@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d6751f55c5b5026a6b99870d1594111e",
+    "content-hash": "03743468bcef6cebc614dfee0bbf89c4",
     "packages": [
         {
             "name": "brick/math",
@@ -1616,17 +1616,11 @@
         },
         {
             "name": "livewire/livewire",
-            "version": "v3.0.0-beta.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/livewire/livewire.git",
-                "reference": "04298292a365841879d64c13881d5499517bb597"
-            },
+            "version": "dev-main",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/livewire/livewire/zipball/04298292a365841879d64c13881d5499517bb597",
-                "reference": "04298292a365841879d64c13881d5499517bb597",
-                "shasum": ""
+                "type": "path",
+                "url": "/Users/josh/Development/packages/livewire",
+                "reference": "b57896e44397d7c5b1c42db64dba4c8382959357"
             },
             "require": {
                 "illuminate/database": "^9.0|^10.0|^11.0",
@@ -1664,7 +1658,13 @@
                     "Livewire\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "App\\": "vendor/orchestra/testbench-core/laravel/app",
+                    "Tests\\": "tests/",
+                    "LegacyTests\\": "legacy_tests/"
+                }
+            },
             "license": [
                 "MIT"
             ],
@@ -1675,17 +1675,9 @@
                 }
             ],
             "description": "A front-end framework for Laravel.",
-            "support": {
-                "issues": "https://github.com/livewire/livewire/issues",
-                "source": "https://github.com/livewire/livewire/tree/v3.0.0-beta.3"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/livewire",
-                    "type": "github"
-                }
-            ],
-            "time": "2023-07-21T23:02:51+00:00"
+            "transport-options": {
+                "relative": false
+            }
         },
         {
             "name": "monolog/monolog",
@@ -8598,10 +8590,17 @@
             "time": "2021-07-28T10:34:58+00:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "package": "livewire/livewire",
+            "version": "dev-main",
+            "alias": "3.0.0-beta.3",
+            "alias_normalized": "3.0.0.0-beta3"
+        }
+    ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "livewire/livewire": 10
+        "livewire/livewire": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
