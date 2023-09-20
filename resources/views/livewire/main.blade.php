@@ -1,9 +1,3 @@
 <div>
-    
+    <input type="text" wire:model.live="inviteResponse2"/>
 </div>
-
-@push('scripts')
-    <script>
-        console.log('hello')
-    </script>
-@endpush
