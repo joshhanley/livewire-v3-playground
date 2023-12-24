@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8bd6947b7519864aa2c7921aba40987b",
+    "content-hash": "e8a8b250b9d99d588fe9e8d70fd89cd5",
     "packages": [
         {
             "name": "brick/math",
@@ -1810,11 +1810,17 @@
         },
         {
             "name": "livewire/livewire",
-            "version": "dev-main",
+            "version": "v3.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/livewire/livewire.git",
+                "reference": "cfda4d16fdd63052cff3030f066deeb2b6f97c9b"
+            },
             "dist": {
-                "type": "path",
-                "url": "/Users/josh/Development/packages/livewire",
-                "reference": "d793262c2631a58cd768ea9920435f214a362022"
+                "type": "zip",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/cfda4d16fdd63052cff3030f066deeb2b6f97c9b",
+                "reference": "cfda4d16fdd63052cff3030f066deeb2b6f97c9b",
+                "shasum": ""
             },
             "require": {
                 "illuminate/database": "^10.0",
@@ -1853,13 +1859,7 @@
                     "Livewire\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "App\\": "vendor/orchestra/testbench-core/laravel/app",
-                    "Tests\\": "tests/",
-                    "LegacyTests\\": "legacy_tests/"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1870,9 +1870,17 @@
                 }
             ],
             "description": "A front-end framework for Laravel.",
-            "transport-options": {
-                "relative": false
-            }
+            "support": {
+                "issues": "https://github.com/livewire/livewire/issues",
+                "source": "https://github.com/livewire/livewire/tree/v3.3.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/livewire",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-12-19T18:02:00+00:00"
         },
         {
             "name": "monolog/monolog",
