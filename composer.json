@@ -66,5 +66,9 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "repositories": {
+        "livewire/livewire": {
+            "type": "path",
+            "url": "/Users/josh/Development/packages/livewire"
+        }
     }
 }
